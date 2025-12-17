@@ -16,5 +16,5 @@ test('check if state saves after reload page', async ({page}) => {
     //reload page
     await page.reload()
     //check if state saved after reload
-    expect(page.locator('.taskText').allTextContents).toEqual(tasks)
+    expect(page.locator('.taskText').allTextContents()).toEqual(tasks)
 })

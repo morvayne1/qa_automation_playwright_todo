@@ -8,5 +8,5 @@
 
 - **State persistence after page reload is not implemented**
   - Tasks, completion status, and order are lost on refresh.
-  - Dedicated failing test: `tests/state/persistence.spec.ts` intentionally fails to highlight this missing production-ready feature.
+  - A dedicated failing test: `tests/state/persistence.spec.ts` is intentionally included to demonstrate a critical production gap and showcase defect detection via automated testing.
   - Suggested improvement: Implement localStorage (or IndexedDB) for saving tasks on change and loading on mount.
